@@ -1,4 +1,3 @@
-// Definierung und Initialisierung einiger Variablen und Listen.
 var pair_names = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 var open_cards = 0;
 var oldCardId = 0;
