@@ -1,19 +1,19 @@
-body { /* Standard Definitionen. */
+body {
     margin: 0px;
     padding: 0px;
     background-color: #a5b1c2;
 }
 
-.display { /* Platzierung des Zug-, und gefundene Pärchen-Textes. */
+.display {
     display: flex;
     justify-content: space-between;
 }
 
-.display h1 { /* Margin-Top der h1 wird entfernt. */
+.display h1 {
     margin-top: 0px;
 }
 
-#game { /* Zentrierung des Spielplans. */
+#game {
     position: absolute;
 
     left: 50%;
@@ -22,7 +22,7 @@ body { /* Standard Definitionen. */
     -webkit-transform: translateX(-50%) translateY(-50%);
 }
 
-table tr td button { /* Designanweisungen für die Karten. */
+table tr td button {
     width: 100px;
     height: 100px;
 
@@ -33,7 +33,6 @@ table tr td button { /* Designanweisungen für die Karten. */
     background-image: url("./memory_images/card_background.jpg");
 }
 
-/* Media-Querrys um den Spielplan in passender größe anzuzeigen. */
 @media (min-width: 1200px) {
     table tr td button {
         width: 120px;
@@ -70,7 +69,7 @@ table tr td button { /* Designanweisungen für die Karten. */
     }
 }
 
-table tr td button.clicked { /* Ausrichtung des Kartenbildes wenn die Karte aufgedeckt wird. Bei einem fehlendem Bild wird ein Platzhalter angezeigt. */
+table tr td button.clicked {
     background-image: url("./memory_images/card_placeholderimage.jpg");
     background-size: cover;
     background-repeat: none;
@@ -78,13 +77,12 @@ table tr td button.clicked { /* Ausrichtung des Kartenbildes wenn die Karte aufg
     
 }
 
-table tr td button.located { /* Design für ein gefundenes Pärchen. */
+table tr td button.located {
     background: none;
     background-color: rgb(239, 239, 239);
     opacity: 0.2;
 }
 
-/* Vergibt das passende Kartenmotiv sobald eine Karte geöffnet wird. */
 table tr td button.pair_1.clicked {
     background-image: url("./memory_images/card_image01.jpg");
 }
